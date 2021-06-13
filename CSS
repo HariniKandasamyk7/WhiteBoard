@@ -1,0 +1,69 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+  background:#490;
+}
+.app {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-70%,-40%);
+  width:400px;
+  height:400px;
+  font-family:Raleway, "sans-serif";
+}
+.app .controls {
+  height:60px;
+  width:162%;
+  display:flex;
+  align-items:center;
+  background:#ddd;
+  padding:0px 10px;
+}
+.app .controls .title,l
+.app .controls .type,
+.app .controls .size,
+.app .controls .color {
+  font-weight:600;
+  font-family:sans-serif;
+  color:#000080;
+  align-items:center;
+  text-align:center;
+  width:30%;
+  margin: 200px 30px;
+  width:90%;
+  height:100%;
+}
+.app .controls .type input {
+  display:none;
+}
+.app .controls .type label {
+  width:30px;
+  height:30px;
+  display:inline-block;
+  text-align:center;
+  line-height:30px;
+  margin:0px 2px;
+  cursor:pointer;
+}
+.app .controls .type input:checked + label {
+  background:#111;
+  color:#eee;
+  border-radius:50%;
+}
+.app .controls .size input {
+  height:10px;
+}
+.app .controls .actions {
+  flex:1;
+  text-align:right;
+}
+.app .controls .actions button {
+  padding:5px 10px;
+  cursor:pointer;
+}
+JavaScript
